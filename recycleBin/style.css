@@ -1,15 +1,73 @@
 .recycle-bin-container {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #525252;
+    height: 200px;
+    width: 200px;
 }
 
-.recycle-bin-container h1 {
-    color: #333;
+.recycle-bin-container .holder{
+    top: 0;
+    height: 15px;
+    width: 20px;
+    background-color: #BDBDBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
 }
 
-.recycle-bin-container p {
-    color: #666;
+.recycle-bin-container .icons{
+    margin-top: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #000080;
+    display: flex;
+    justify-content: end;
+}
+
+.recycle-bin-container .minimize-ico{
+    height: 10px;
+    width: 10px;
+    padding-bottom: -10px;
+    border-bottom: 2px solid #000;
+}
+
+.recycle-bin-container .whole-ico{
+    height: 10px;
+    width: 10px;
+    border-top: 2px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.recycle-bin-container .close-ico{
+    height: 10px;
+    width: 10px;
+}
+.recycle-bin-container .close-ico:after {
+    content: '';
+    height: 12px;
+    border-left: 2px solid #000;
+    top: 6px;
+    margin-left: 4px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.recycle-bin-container .close-ico:before {
+    content: '';
+    height: 12px;
+    border-left: 2px solid #000;
+    top: 6px;
+    margin-left: 4px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.recycle-bin-container .top{
 }
