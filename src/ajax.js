@@ -1,7 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Function to load content for My Computer
     function loadMyComputerContent() {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
@@ -13,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
         xhr.send();
     }
 
-    // Function to load content for Internet Explorer
     function loadInternetExplorerContent() {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
@@ -25,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
         xhr.send();
     }
 
-    // Function to load content for Recycle Bin
     function loadRecycleBinContent() {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
@@ -37,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         xhr.send();
     }
 
-    // Function to load content for My Documents
     function loadMyDocumentsContent() {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
@@ -49,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
         xhr.send();
     }
 
-    // Adding click event listeners to the images
     document.getElementById("myComputerImage").addEventListener("click", function() {
         loadMyComputerContent();
     });
