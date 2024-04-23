@@ -14,43 +14,49 @@
             <div class="holder">
                 <section class="line line1"></section>
 
-                <img src="./images/myComputer.png" alt="">
-                <img src="./images/internetExplorer.png" class="explorer" alt="">
-                <img src="./images/recycleBin.png" alt="">
-                <img src="./images/myDocuments.png" class="documents">
+                <img src="./images/myComputer.png" alt="" id="myComputerImage">
+                <img src="./images/internetExplorer.png" class="explorer" alt="" id="internetExplorerImage">
+                <img src="./images/recycleBin.png" alt="" id="recycleBinImage">
+                <img src="./images/myDocuments.png" class="documents" id="myDocumentsImage">
             </div>
             <section class="line line2"></section>
         </nav>
         <section class="line"></section>
-        <div class="clock">Clock</div>
-        
+        <div class="clock">Clock</div> 
     </div>
     
+    <div id="indexContent"></div>
+    <div id="index2Content"></div>
+    <div id="index3Content"></div>
+    <div id="index4Content"></div>
+
     <main>
         <div class="container">
 
-            <div class="holder1">
-                <img src="./images/recycleBin.png" alt="">
+            <div class="holder1" id="recycleBinHolder">
+                <img src="./images/recycleBin.png" alt="" id="recycleBinLogo">
                 <p class="title">Recycle bin</p>
             </div>
 
-            <div class="holder2">
-                <img src="./images/internetExplorer.png" class="explorer">
-                <p class="title">Inernet Explorer</p>
+            <div class="holder2" id="internetExplorerHolder">
+                <img src="./images/internetExplorer.png" class="explorer" id="internetExplorerLogo">
+                <p class="title">Internet Explorer</p>
             </div>
             
-            <div class="holder3">
-                <img src="./images/myComputer.png" alt="">
+            <div class="holder3" id="myComputerHolder">
+                <img src="./images/myComputer.png" alt="" id="myComputerLogo">
                 <p class="title">My Computer</p>
             </div>
 
-            <div class="holder4">
-                <img src="./images/myDocuments.png" alt="">
+            <div class="holder4" id="myDocumentsHolder">
+                <img src="./images/myDocuments.png" alt="" id="myDocumentsLogo">
                 <p class="title">My Documents</p>
             </div>
 
         </div>
     </main>
     <script src="./src/script.js"></script>
+    <script src="./src/ajax.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,16 @@
+.recycle-bin-container {
+    /* Styles specific to the recycle bin container */
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.recycle-bin-container h1 {
+    color: #333;
+}
+
+.recycle-bin-container p {
+    color: #666;
+}

@@ -8,11 +8,11 @@ function updateClock() {
 
     var timeString = hours + ':' + minutes;
     if (hours >=12){
-    time = " PM"
+        time = " PM"
     }else{
         time = " AM"
     }
     document.querySelector('.clock').textContent = timeString + time;
 }
-
 setInterval(updateClock, 1000);
+
