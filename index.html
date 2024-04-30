@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/recycle.css">
 </head>
 <body>
     <div class="nav-container">
@@ -13,7 +14,6 @@
             <img src="./images/windowsButton.png" class="windows">
             <div class="holder">
                 <section class="line line1"></section>
-
                 <img src="./images/myComputer.png" alt="" id="myComputerImage">
                 <img src="./images/internetExplorer.png" class="explorer" alt="" id="internetExplorerImage">
                 <img src="./images/recycleBin.png" alt="" id="recycleBinImage">
@@ -27,14 +27,23 @@
     
     <div id="indexContent"></div>
     <div id="index2Content"></div>
-    <div id="index3Content"></div>
+    <div id="index3Content">
+        <div class="recycle-bin-container">
+            <div class="icons">
+                <div class="title"></div>
+                <div class="holder"><div class="minimize-ico"></div></div>
+                <div class="holder"><div class="whole-ico"></div></div>
+                <div class="holder"><div class="close-ico"></div></div>
+            </div>
+        </div>
+    </div>
     <div id="index4Content"></div>
 
     <main>
         <div class="container">
 
             <div class="holder1" id="recycleBinHolder">
-                <img src="./images/recycleBin.png" alt="" id="recycleBinLogo">
+                <img src="./images/recycleBin.png" alt="" id="recycleBinImage">
                 <p class="title">Recycle bin</p>
             </div>
 
@@ -56,7 +65,30 @@
         </div>
     </main>
     <script src="./src/script.js"></script>
-    <script src="./src/ajax.js"></script>
+    <script src="./src/show.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("#index3Content .icons").on("mousedown", function(e) {
+                var $draggedElement = $("#index3Content").css('position', 'absolute').addClass('dragging');
+                var startX = e.pageX - $draggedElement.offset().left;
+                var startY = e.pageY - $draggedElement.offset().top;
+                
+                $(document).on("mousemove.drag", function(e) {
+                    $draggedElement.offset({
+                        top: e.pageY - startY,
+                        left: e.pageX - startX
+                    });
+                }).on("mouseup.drag", function() {
+                    $draggedElement.removeClass('dragging');
+                    $(document).off(".drag");
+                });
+            });
+        });
+        
+    </script>
 
+    
+    
 </body>
 </html>

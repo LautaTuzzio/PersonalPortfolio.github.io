@@ -157,3 +157,10 @@ nav .holder{
 .holder4{
     margin-top: -20px;
 }
+
+#indexContent,
+#index2Content,
+#index3Content,
+#index4Content {
+    display: none;
+}

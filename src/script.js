@@ -14,5 +14,5 @@ function updateClock() {
     }
     document.querySelector('.clock').textContent = timeString + time;
 }
-setInterval(updateClock, 1000);
+setInterval(updateClock, 1000); // Update the clock every second
 
