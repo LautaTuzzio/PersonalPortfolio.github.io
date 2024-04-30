@@ -1,8 +1,8 @@
 .recycle-bin-container {
     background-color: #fff;
     border: 2px solid #525252;
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 600px;
 }
 
 .recycle-bin-container .holder{
@@ -23,7 +23,6 @@
 .recycle-bin-container .icons{
     margin-top: 0;
     padding-top: 2px;
-    padding-bottom: 2px;
     background-color: #000080;
     display: flex;
     justify-content: end;
@@ -36,6 +35,12 @@
     border-bottom: 2px solid #000;
 }
 
+.recycle-bin-container .title{
+    color: white;
+    font-weight: 5px;
+    margin-top: 0px;
+    margin-right: 447px;
+}
 .recycle-bin-container .whole-ico{
     height: 10px;
     width: 10px;
@@ -69,3 +74,23 @@
     transform: rotate(-45deg);
 }
 
+.recycle-bin-container .shorcuts{
+    background-color: #C0C0C0;
+    display: flex;
+    font-size: 15px;
+    font-weight: 10px;
+    height: 35px;
+    border: 3px solid #d6d3d3 ;
+}
+.recycle-bin-container .shorcuts p{
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.recycle-bin-container .shorcuts p:first-letter{
+    text-decoration:underline;
+}
+
+.tools svg path {
+    stroke-width: 20.0;
+}
