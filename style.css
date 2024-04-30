@@ -27,10 +27,10 @@ body {
     height: auto;
 }
   
-.holder1,
-.holder2,
-.holder3,
-.holder4 {
+.container .holder1,
+.container .holder2,
+.container .holder3,
+.container .holder4 {
     color: #D7D7D7;
     text-align: left;
 }
@@ -126,35 +126,35 @@ nav .holder{
     transform: translateX(7px);
 }
 
-.holder2 .explorer{
+.container .holder2 .explorer{
     height: 50px;
     width: 50px;
     margin-left: 20px;
 }
 
-.holder1 img{
+.container .holder1 img{
     margin-top: 10;
     margin-left: 5px;
 }
-.holder1 p{
-    margin-top: -20px;
+.container .holder1 p{
+  margin-top: -20px;
     margin-left: 6px;
 }
 
-.holder3 p{
+.container .holder3 p{
     margin-top: -20px;
 }
 
-.holder4 p{
+.container.holder4 p{
     margin-top: -20px;
 }
 
-.holder3,
-.holder4{
+.container .holder3,
+.container .holder4{
     margin-top: -20px;
 }
 
-.holder4{
+.container .holder4{
     margin-top: -20px;
 }
 
@@ -164,3 +164,4 @@ nav .holder{
 #index4Content {
     display: none;
 }
+

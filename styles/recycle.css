@@ -91,6 +91,23 @@
     text-decoration:underline;
 }
 
-.tools svg path {
-    stroke-width: 20.0;
+.recycle-bin-container .tools{
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding-top: 30px;
+    background-color: #C0C0C0;
+    width: 99%;
+    height: 40px;
+    border: 3px solid #d6d3d3;
+}
+
+.recycle-bin-container span{
+    margin-left: 10px;
+}
+
+.recycle-bin-container .contentHolder{
+    /*to do*/
 }
