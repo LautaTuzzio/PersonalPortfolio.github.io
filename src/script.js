@@ -16,3 +16,6 @@ function updateClock() {
 }
 setInterval(updateClock, 1000); // Update the clock every second
 
+function closeMyComputerContent() {
+    indexContent.style.display = "none";
+}

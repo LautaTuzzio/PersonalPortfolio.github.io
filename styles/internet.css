@@ -1,5 +1,102 @@
 .internet-explorer-content{
     width: 700px;
-    height: 700px;
     background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+}
+
+.internet-explorer-content .icons{
+    margin-top: 0;
+    padding-top: 2px;
+    background-color: #000080;
+    display: flex;
+    justify-content: end;
+}
+
+.internet-explorer-content .minimize-ico{
+    height: 10px;
+    width: 10px;
+    padding-bottom: -10px;
+    border-bottom: 2px solid #000;
+}
+
+.internet-explorer-content .title{
+    color: white;
+    font-weight: 5px;
+    margin-top: 0px;
+    margin-right: 567px;
+}
+.internet-explorer-content .whole-ico{
+    height: 10px;
+    width: 10px;
+    border-top: 2px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.internet-explorer-content .close-ico{
+    height: 10px;
+    width: 10px;
+}
+.internet-explorer-content .close-ico:after {
+    content: '';
+    height: 12px;
+    border-left: 2px solid #000;
+    top: 6px;
+    margin-left: 4px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.internet-explorer-content .close-ico:before {
+    content: '';
+    height: 12px;
+    border-left: 2px solid #000;
+    top: 6px;
+    margin-left: 4px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.internet-explorer-content .holder{
+    top: 0;
+    height: 15px;
+    width: 20px;
+    background-color: #BDBDBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+.internet-explorer-content img{
+    height: 350px;
+    width: 350px;
+    border-right: 2px solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(214, 214, 214);
+    float: left; 
+}
+
+.internet-explorer-content .main {
+    overflow: hidden;
+    background-color: #979797;
+    border: 2px solid rgb(214, 214, 214);
+}
+
+.internet-explorer-content p{
+    font-size: 18px;
+}
+.internet-explorer-content h1{
+    text-align: center;
+}
+
+li{
+    list-style: none;
 }

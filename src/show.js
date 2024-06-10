@@ -1,59 +1,114 @@
 document.addEventListener("DOMContentLoaded", function() {
     var recycleBinImage = document.getElementById("recycleBinImage");
     var recycleBinHolder = document.getElementById("recycleBinHolder");
-    var index3Content = document.getElementById("index3Content");
-    var closeButton = document.querySelector(".close-ico");
+    var index3Content = document.getElementById("index4Content");
+    var recycleBinCloseButton = document.querySelector("#index4Content .close-ico");
 
     if (recycleBinImage) {
-        recycleBinImage.addEventListener("click", toggleIndexContent);
+        recycleBinImage.addEventListener("click", toggleRecycleBinContent);
     }
 
     if (recycleBinHolder) {
-        recycleBinHolder.addEventListener("click", toggleIndexContent);
+        recycleBinHolder.addEventListener("click", toggleRecycleBinContent);
     }
 
-    if (closeButton) {
-        closeButton.addEventListener("click", closeIndexContent);
+    if (recycleBinCloseButton) {
+        recycleBinCloseButton.addEventListener("click", closeRecycleBinContent);
     }
 
-    function toggleIndexContent() {
+    function toggleRecycleBinContent() {
         if (index3Content.style.display === "none" || index3Content.style.display === "") {
             index3Content.style.display = "block";
             index3Content.style.position = "absolute";
         }
     }
 
-    function closeIndexContent() {
+    function closeRecycleBinContent() {
         index3Content.style.display = "none";
     }
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    var recycleBinImage = document.getElementById("internetExplorerImage");
-    var recycleBinHolder = document.getElementById("internetExplorerHolder");
-    var index3Content = document.getElementById("index2Content");
-    var closeButton = document.querySelector(".close-ico");
+    var internetExplorerImage = document.getElementById("internetExplorerImage");
+    var internetExplorerHolder = document.getElementById("internetExplorerHolder");
+    var index2Content = document.getElementById("index2Content");
+    var internetExplorerCloseButton = document.querySelector("#index2Content .close-ico");
 
-    if (recycleBinImage) {
-        recycleBinImage.addEventListener("click", toggleIndexContent);
+    if (internetExplorerImage) {
+        internetExplorerImage.addEventListener("click", toggleInternetExplorerContent);
     }
 
-    if (recycleBinHolder) {
-        recycleBinHolder.addEventListener("click", toggleIndexContent);
+    if (internetExplorerHolder) {
+        internetExplorerHolder.addEventListener("click", toggleInternetExplorerContent);
     }
 
-    if (closeButton) {
-        closeButton.addEventListener("click", closeIndexContent);
+    if (internetExplorerCloseButton) {
+        internetExplorerCloseButton.addEventListener("click", closeInternetExplorerContent);
     }
 
-    function toggleIndexContent() {
+    function toggleInternetExplorerContent() {
         if (index2Content.style.display === "none" || index2Content.style.display === "") {
             index2Content.style.display = "block";
             index2Content.style.position = "absolute";
         }
     }
 
-    function closeIndexContent() {
+    function closeInternetExplorerContent() {
         index2Content.style.display = "none";
+    }
+
+    var myComputerImage = document.getElementById("myComputerImage");
+    var myComputerHolder = document.getElementById("myComputerHolder");
+    var indexContent = document.getElementById("indexContent");
+    var myComputerCloseButton = document.querySelector("#indexContent .close-ico");
+
+    if (myComputerImage) {
+        myComputerImage.addEventListener("click", toggleMyComputerContent);
+    }
+
+    if (myComputerHolder) {
+        myComputerHolder.addEventListener("click", toggleMyComputerContent);
+    }
+
+    if (myComputerCloseButton) {
+        myComputerCloseButton.addEventListener("click", closeMyComputerContent);
+    }
+
+    function toggleMyComputerContent() {
+        if (indexContent.style.display === "none" || indexContent.style.display === "") {
+            indexContent.style.display = "block";
+            indexContent.style.position = "absolute";
+        }
+    }
+
+    function closeMyComputerContent() {
+        indexContent.style.display = "none";
+    }
+
+    var myDocumentsImage = document.getElementById("myDocumentsImage");
+    var myDocumentsHolder = document.getElementById("myDocumentsHolder");
+    var index4Content = document.getElementById("index3Content");
+    var myDocumentsCloseButton = document.querySelector("#index3Content .close-ico");
+
+    if (myDocumentsImage) {
+        myDocumentsImage.addEventListener("click", toggleMyDocumentsContent);
+    }
+
+    if (myDocumentsHolder) {
+        myDocumentsHolder.addEventListener("click", toggleMyDocumentsContent);
+    }
+
+    if (myDocumentsCloseButton) {
+        myDocumentsCloseButton.addEventListener("click", closeMyDocumentsContent);
+    }
+
+    function toggleMyDocumentsContent() {
+        if (index4Content.style.display === "none" || index4Content.style.display === "") {
+            index4Content.style.display = "block";
+            index4Content.style.position = "absolute";
+        }
+    }
+
+    // Function to close Additional index content
+    function closeMyDocumentsContent() {
+        index4Content.style.display = "none";
     }
 });

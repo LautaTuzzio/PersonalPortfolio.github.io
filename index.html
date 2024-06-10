@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./styles/recycle.css">
     <link rel="stylesheet" href="./styles/internet.css">
+    <link rel="stylesheet" href="./styles/mycomputer.css">
 
 </head>
 <body>
@@ -26,19 +27,134 @@
         <section class="line"></section>
         <div class="clock">Clock</div> 
     </div>
-    
-    <div id="indexContent"></div>
+    <div class="content">
+    <div id="indexContent">
+        <div class="mycomputer-content">
+            <div class="icons">
+                <div class="title">Warning</div>
+                <div class="holder"><div class="close-ico"></div></div>
+            </div>
+            <div class="content">
+                <img src="./images/warning.webp" alt="">
+                <p>Unexpected error. Please investigate.</p>
+            </div>
+            <div class="button">
+                <button onclick="closeMyComputerContent()">Ok</button>
+            </div>
+        </div>
+    </div>
     <div id="index2Content">
         <div class="internet-explorer-content">
             <div class="icons">
-                <div class="title">Internet Explorer</div>
+                <div class="title">Explorer</div>
                 <div class="holder"><div class="minimize-ico"></div></div>
                 <div class="holder"><div class="whole-ico"></div></div>
                 <div class="holder"><div class="close-ico"></div></div>
             </div>
+            <div class="main">
+                <img src="./images/self.png" alt="">
+                <div class="text">
+                    <h1>Welcome!</h1>
+                    <p class="p1">Hello and welcome to my website, my name is Lautaro Tuzzio and I'm a 17 year old aspiring full-stack developer. A JavaScript enthusiast and your local mate enjoyer.</p>
+                    <h1>Languages</h1>
+                    <ul class="u1">
+                        <li>Python (Back-end focused)</li>
+                        <li>PHP (basic Laravel)</li>
+                        <li>HTML</li>
+                        <li>CSS (basic Tailwind)</li>
+                        <li>JS (Node.js, React.JS, Vue.js, Jquerry)</li>
+                    </ul>
+                </div>
+                <div class="additional-text">
+                    <h1>About</h1>
+                    <ul>
+                        <li>I was born in Buenos Aires, Argentina 🇦🇷, where I currently reside.</li>
+                        <li>I'm what would be coinsidered an <a href="https://arcarrierpoint.net/avgeek-meaning/#:~:text=What%20is%20an%20Avgeek%3F,land%2C%20and%20perform%20aerobatic%20maneuvers.">Avgeek</a>, although I won't pursue it as a career.</li>
+                        <li>I enjoy various sports, my favorite being volleyball.</li>
+                        <li>I'm currently studying in a high school called "Tecnica 1 de Vicente Lopez".</li>
+                        <li>🧉</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <div id="index3Content">
+        <div class="recycle-bin-container">
+            <div class="icons">
+                <div class="title">Recycle bin</div>
+                <div class="holder"><div class="minimize-ico"></div></div>
+                <div class="holder"><div class="whole-ico"></div></div>
+                <div class="holder"><div class="close-ico"></div></div>
+            </div>
+            <div class="shorcuts">
+                <p>File</p>
+                <p>Edit</p>
+                <p>View</p>
+                <p>Go</p>
+                <p>Favorites</p>
+                <p>Help</p>
+            </div>
+            <div class="contentHolder">
+                <aside>
+                    <div>
+                        <img src="./images/myDocuments.png" alt="">
+                        <h1>My Documents</h1>
+                    </div>
+                    <div class="line-holder">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="desc">
+                        <p>See your files and projects in this folder</p>
+                    </div>
+                </aside>
+                <div class="center">
+                <div class="projects-unfinished">
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="index4Content">
         <div class="recycle-bin-container">
             <div class="icons">
                 <div class="title">Recycle bin</div>
@@ -114,55 +230,115 @@
             </div>
         </div>
     </div>
-    <div id="index4Content"></div>
-
+</div>
     <main>
         <div class="container">
 
-            <div class="holder1" id="recycleBinHolder">
+            <span class="holder1" id="recycleBinHolder">
                 <img src="./images/recycleBin.png" alt="" id="recycleBinImage">
                 <p class="title">Recycle bin</p>
-            </div>
+            </span>
 
-            <div class="holder2" id="internetExplorerHolder">
+            <span class="holder2" id="internetExplorerHolder">
                 <img src="./images/internetExplorer.png" class="explorer" id="internetExplorerLogo">
                 <p class="title">Internet Explorer</p>
-            </div>
+            </span>
             
-            <div class="holder3" id="myComputerHolder">
+            <span class="holder3" id="myComputerHolder">
                 <img src="./images/myComputer.png" alt="" id="myComputerLogo">
                 <p class="title">My Computer</p>
-            </div>
+            </span>
 
-            <div class="holder4" id="myDocumentsHolder">
+            <span class="holder4" id="myDocumentsHolder">
                 <img src="./images/myDocuments.png" alt="" id="myDocumentsLogo">
                 <p class="title">My Documents</p>
-            </div>
+            </span>
 
         </div>
     </main>
+
+    <div class="error-message" style="display: none;">
+        <p>This website does not support mobile resolutions. Please view it on a larger screen.</p>
+    </div>
+    
     <script src="./src/script.js"></script>
     <script src="./src/show.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function() {
+    $(document).ready(function() {
+
+        if ($(window).width() <= 768) {
+        $(".error-message").show();
+        $("body").css("background-color", "white");
+        $(".content, .nav-container, main").hide();
+
+    }
         $("#index3Content .icons").on("mousedown", function(e) {
-                var $draggedElement = $("#index3Content").css('position', 'absolute').addClass('dragging');
-                var startX = e.pageX - $draggedElement.offset().left;
-                var startY = e.pageY - $draggedElement.offset().top;
-                
-                $(document).on("mousemove.drag", function(e) {
-                    $draggedElement.offset({
-                        top: e.pageY - startY,
-                        left: e.pageX - startX
-                    });
-                }).on("mouseup.drag", function() {
-                    $draggedElement.removeClass('dragging');
-                    $(document).off(".drag");
+            var $draggedElement = $("#index3Content").css('position', 'absolute').addClass('dragging');
+            var startX = e.pageX - $draggedElement.offset().left;
+            var startY = e.pageY - $draggedElement.offset().top;
+
+            $(document).on("mousemove.drag", function(e) {
+                $draggedElement.offset({
+                    top: e.pageY - startY,
+                    left: e.pageX - startX
                 });
+            }).on("mouseup.drag", function() {
+                $draggedElement.removeClass('dragging');
+                $(document).off(".drag");
             });
         });
-        
+
+        $("#index2Content .icons").on("mousedown", function(e) {
+            var $draggedElement = $("#index2Content").css('position', 'absolute').addClass('dragging');
+            var startX = e.pageX - $draggedElement.offset().left;
+            var startY = e.pageY - $draggedElement.offset().top;
+
+            $(document).on("mousemove.drag", function(e) {
+                $draggedElement.offset({
+                    top: e.pageY - startY,
+                    left: e.pageX - startX
+                });
+            }).on("mouseup.drag", function() {
+                $draggedElement.removeClass('dragging');
+                $(document).off(".drag");
+            });
+        });
+
+        $("#indexContent .icons").on("mousedown", function(e) {
+            var $draggedElement = $("#indexContent").css('position', 'absolute').addClass('dragging');
+            var startX = e.pageX - $draggedElement.offset().left;
+            var startY = e.pageY - $draggedElement.offset().top;
+
+            $(document).on("mousemove.drag", function(e) {
+                $draggedElement.offset({
+                    top: e.pageY - startY,
+                    left: e.pageX - startX
+                });
+            }).on("mouseup.drag", function() {
+                $draggedElement.removeClass('dragging');
+                $(document).off(".drag");
+            });
+        });
+
+        $("#index4Content .icons").on("mousedown", function(e) {
+            var $draggedElement = $("#index4Content").css('position', 'absolute').addClass('dragging');
+            var startX = e.pageX - $draggedElement.offset().left;
+            var startY = e.pageY - $draggedElement.offset().top;
+
+            $(document).on("mousemove.drag", function(e) {
+                $draggedElement.offset({
+                    top: e.pageY - startY,
+                    left: e.pageX - startX
+                });
+            }).on("mouseup.drag", function() {
+                $draggedElement.removeClass('dragging');
+                $(document).off(".drag");
+            });
+        });
+    });
+ 
+    
     </script>
     
 </body>

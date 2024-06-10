@@ -1,0 +1,94 @@
+.mycomputer-content{
+    width: 700px;
+    background-color: #C0C0C0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+}
+
+.mycomputer-content .icons{
+    margin-top: 0;
+    padding-top: 2px;
+    background-color: #000080;
+    display: flex;
+    justify-content: end;
+}
+
+
+.mycomputer-content .title{
+    color: white;
+    font-weight: 5px;
+    margin-top: 0px;
+    margin-right: 617px;
+}
+
+.mycomputer-content .close-ico{
+    height: 10px;
+    width: 10px;
+}
+
+.mycomputer-content .close-ico:after {
+    content: '';
+    height: 12px;
+    border-left: 2px solid #000;
+    top: 6px;
+    margin-left: 4px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.mycomputer-content .close-ico:before {
+    content: '';
+    height: 12px;
+    border-left: 2px solid #000;
+    top: 6px;
+    margin-left: 4px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.mycomputer-content .holder{
+    top: 0;
+    height: 15px;
+    width: 20px;
+    background-color: #BDBDBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+.mycomputer-content .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+.mycomputer-content img{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.mycomputer-content p{
+    margin-right: 200px;
+}
+
+.mycomputer-content button{
+    text-align: center;
+    background-color: #C0C0C0;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.mycomputer-content .button{
+    display: flex;
+    justify-content: center;
+}

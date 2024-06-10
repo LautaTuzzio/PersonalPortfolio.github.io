@@ -1,9 +1,10 @@
 .recycle-bin-container {
     background-color: #fff;
     border: 2px solid #525252;
-    height: 60%; /* Adjust this height as needed */
+    height: 60%;
     width: 700px;
 }
+
 
 .recycle-bin-container .holder{
     top: 0;
