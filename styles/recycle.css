@@ -1,8 +1,8 @@
 .recycle-bin-container {
     background-color: #fff;
     border: 2px solid #525252;
-    height: 400px;
-    width: 600px;
+    height: 60%; /* Adjust this height as needed */
+    width: 700px;
 }
 
 .recycle-bin-container .holder{
@@ -39,7 +39,7 @@
     color: white;
     font-weight: 5px;
     margin-top: 0px;
-    margin-right: 447px;
+    margin-right: 547px;
 }
 .recycle-bin-container .whole-ico{
     height: 10px;
@@ -91,23 +91,107 @@
     text-decoration:underline;
 }
 
-.recycle-bin-container .tools{
-    color: black;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 40px;
-    padding-top: 30px;
-    background-color: #C0C0C0;
-    width: 99%;
-    height: 40px;
-    border: 3px solid #d6d3d3;
-}
-
-.recycle-bin-container span{
-    margin-left: 10px;
-}
-
 .recycle-bin-container .contentHolder{
-    /*to do*/
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.recycle-bin-container .contentHolder aside{
+    height: 100%;
+    width: 30%;
+    margin: 0;
+    background: linear-gradient(to bottom, #C0DCF9, #FFFFFF);
+
+}
+
+.recycle-bin-container .contentHolder aside img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: -80px;
+}
+
+.recycle-bin-container .contentHolder aside h1{
+    font-size: 60px;
+    margin-left: 20px;
+    margin-bottom: -5px;
+}
+
+.recycle-bin-container .line-holder {
+    display: flex;
+}
+
+.recycle-bin-container .line-holder div:nth-child(1){
+    border: 1px solid red;
+    width: 100px;
+    height: 25% ;
+}
+
+.recycle-bin-container .line-holder div:nth-child(2){
+    border: 1px solid yellow;
+    width: 100px;
+    height: 25% ;
+}
+
+.recycle-bin-container .line-holder div:nth-child(3){
+    border: 1px solid green;
+    width: 100px;
+    height: 25%;
+}
+
+.recycle-bin-container .line-holder div:nth-child(4){
+    border: 1px solid blue;
+    width: 100px;
+    height: 25% ;
+}
+
+.recycle-bin-container .desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+.recycle-bin-container .projects-unfinished{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 40px; 
+        height: 300px;
+        margin-top: 20px;
+}
+
+
+.recycle-bin-container .whitespace {
+        background-color: #E0E0E0;
+        padding: 20px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        height: 50px;
+        width: 50px;
+        flex-grow: 1;
+
+}
+
+.recycle-bin-container .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+
+}
+
+.recycle-bin-container .contentHolder {
+    display: flex;
+}
+
+.recycle-bin-container .contentHolder aside {
+    height: 100%;
+    width: 40%;
+    margin: 0;
+    background: linear-gradient(to bottom, #C0DCF9, #FFFFFF);
 }

@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./styles/recycle.css">
+    <link rel="stylesheet" href="./styles/internet.css">
+
 </head>
 <body>
     <div class="nav-container">
@@ -26,7 +28,16 @@
     </div>
     
     <div id="indexContent"></div>
-    <div id="index2Content"></div>
+    <div id="index2Content">
+        <div class="internet-explorer-content">
+            <div class="icons">
+                <div class="title">Internet Explorer</div>
+                <div class="holder"><div class="minimize-ico"></div></div>
+                <div class="holder"><div class="whole-ico"></div></div>
+                <div class="holder"><div class="close-ico"></div></div>
+            </div>
+        </div>
+    </div>
     <div id="index3Content">
         <div class="recycle-bin-container">
             <div class="icons">
@@ -43,16 +54,64 @@
                 <p>Favorites</p>
                 <p>Help</p>
             </div>
-            <div class="tools">
-                <span class="shortcut1">Back</span>
-                <span class="shortcut2">Forward</span>
-                <span class="shortcut3">Up</span>
-                <span class="shortcut4">Cut</span>
-                <span class="shortcut5">Copy</span>
-                <span class="shortcut6">Paste</span>
-                <span class="shortcut7">Undo</span>
+            <div class="contentHolder">
+                <aside>
+                    <div>
+                        <img src="./images/recycleBin.png" alt="">
+                        <h1>Recycle bin</h1>
+                    </div>
+                    <div class="line-holder">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="desc">
+                        <p>This folder contains files (projects) that haven't been finished</p>
+                    </div>
+                </aside>
+                <div class="center">
+                <div class="projects-unfinished">
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                    <div class="project-holder">
+                        <div class="whitespace"></div>
+                        <p>Project title</p>
+                    </div>
+                </div>
             </div>
-            <div class="contentHolder"></div>
+            </div>
         </div>
     </div>
     <div id="index4Content"></div>
@@ -105,8 +164,6 @@
         });
         
     </script>
-
-    
     
 </body>
 </html>
