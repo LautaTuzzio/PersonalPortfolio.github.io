@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Function to close Additional index content
     function closeMyDocumentsContent() {
         index4Content.style.display = "none";
     }

@@ -167,7 +167,7 @@ nav .holder{
 }
 
 span{
-    width: 100px;
+    width: 98px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -186,5 +186,23 @@ span{
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        display: block;
     }
+    
+}
+
+
+body{
+    display: none;
+}
+
+.holder1:hover,
+.holder2:hover,
+.holder3:hover,
+.holder4:hover{
+    background-color: rgba(152, 229, 248, 0.226);
+}
+
+nav img:hover{
+    cursor: pointer;
 }

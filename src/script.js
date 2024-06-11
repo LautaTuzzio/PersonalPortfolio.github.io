@@ -1,3 +1,4 @@
+
 function updateClock() {
     var now = new Date();
     var hours = now.getHours();
@@ -14,8 +15,12 @@ function updateClock() {
     }
     document.querySelector('.clock').textContent = timeString + time;
 }
-setInterval(updateClock, 1000); // Update the clock every second
+setInterval(updateClock, 1000); 
 
 function closeMyComputerContent() {
     indexContent.style.display = "none";
+}
+
+function lazy() {
+    alert("Not an added feature.")
 }

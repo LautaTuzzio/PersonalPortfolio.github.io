@@ -14,7 +14,7 @@
 <body>
     <div class="nav-container">
         <nav>
-            <img src="./images/windowsButton.png" class="windows">
+            <img src="./images/windowsButton.png" class="windows" onclick="lazy()">
             <div class="holder">
                 <section class="line line1"></section>
                 <img src="./images/myComputer.png" alt="" id="myComputerImage">
@@ -47,8 +47,8 @@
         <div class="internet-explorer-content">
             <div class="icons">
                 <div class="title">Explorer</div>
-                <div class="holder"><div class="minimize-ico"></div></div>
-                <div class="holder"><div class="whole-ico"></div></div>
+                <div class="holder"><div class="minimize-ico" onclick="lazy()"></div></div>
+                <div class="holder"><div class="whole-ico" onclick="lazy()"></div></div>
                 <div class="holder"><div class="close-ico"></div></div>
             </div>
             <div class="main">
@@ -82,8 +82,8 @@
         <div class="recycle-bin-container">
             <div class="icons">
                 <div class="title">Recycle bin</div>
-                <div class="holder"><div class="minimize-ico"></div></div>
-                <div class="holder"><div class="whole-ico"></div></div>
+                <div class="holder"><div class="minimize-ico" onclick="lazy()"></div></div>
+                <div class="holder"><div class="whole-ico" onclick="lazy()"></div></div>
                 <div class="holder"><div class="close-ico"></div></div>
             </div>
             <div class="shorcuts">
@@ -158,8 +158,8 @@
         <div class="recycle-bin-container">
             <div class="icons">
                 <div class="title">Recycle bin</div>
-                <div class="holder"><div class="minimize-ico"></div></div>
-                <div class="holder"><div class="whole-ico"></div></div>
+                <div class="holder"><div class="minimize-ico" onclick="lazy()"></div></div>
+                <div class="holder"><div class="whole-ico" onclick="lazy()"></div></div>
                 <div class="holder"><div class="close-ico"></div></div>
             </div>
             <div class="shorcuts">
@@ -265,6 +265,10 @@
     <script src="./src/show.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+
+    window.addEventListener('load', function() {
+        document.body.style.display = 'block';
+    });
     $(document).ready(function() {
 
         if ($(window).width() <= 768) {
