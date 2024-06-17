@@ -40,7 +40,7 @@
     color: white;
     font-weight: 5px;
     margin-top: 0px;
-    margin-right: 547px;
+    margin-right: 597px;
 }
 .recycle-bin-container .whole-ico{
     height: 10px;
@@ -168,12 +168,16 @@
 
 .recycle-bin-container .whitespace {
         background-color: #E0E0E0;
-        padding: 20px;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-        height: 50px;
-        width: 50px;
+        height: 90px;
+        width: 90px;
         flex-grow: 1;
+    
+}
 
+.recycle-bin-container a{
+    color: black;
+    text-decoration: none;
 }
 
 .recycle-bin-container .center{

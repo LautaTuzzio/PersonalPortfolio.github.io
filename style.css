@@ -206,3 +206,17 @@ body{
 nav img:hover{
     cursor: pointer;
 }
+
+a:hover{
+    cursor: pointer;
+}
+
+.container p{
+    text-align: center;
+    margin-left: -10px;
+}
+
+.container .holder1 p{
+    text-align: center;
+    margin-left: -10px;
+}
