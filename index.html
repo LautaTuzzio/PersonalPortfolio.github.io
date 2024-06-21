@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./styles/recycle.css">
     <link rel="stylesheet" href="./styles/internet.css">
@@ -31,15 +31,44 @@
     <div id="indexContent">
         <div class="mycomputer-content">
             <div class="icons">
-                <div class="title">Warning</div>
+                <div class="title">My computer</div>
                 <div class="holder"><div class="close-ico"></div></div>
             </div>
             <div class="content">
-                <img src="./images/warning.webp" alt="">
-                <p>Unexpected error. Please investigate.</p>
-            </div>
-            <div class="button">
-                <button onclick="closeMyComputerContent()">Ok</button>
+                <h1>Let's get in touch!</h1>
+                <form id="contact-form" action="https://formspree.io/f/mgvwwoyg" method="POST">
+                    <div class="form-row">
+                      <div class="half-width half-width-1">
+                        <input type="text" name="First Name" placeholder="First name" required>
+                      </div>
+                      <div class="half-width half-width-2">
+                        <input type="text" name="Last name" placeholder="Last name" required>
+                      </div>
+                    </div>
+                  
+                    <div class="form-row">
+                      <input type="email" name="Email" placeholder="Email" required>
+                    </div>
+                  
+                    <div class="form-row">
+                      <select name="Reason" required>
+                        <option value="" disabled selected hidden>Reason</option>
+                        <option value="Inquiry">Inquiry</option>
+                        <option value="Job opportunity">Job opportunity</option>
+                        <option value="Feedback">Feedback</option>
+                      </select>
+                    </div>
+                  
+                    <div class="form-row">
+                      <textarea name="message" placeholder="Message" required></textarea>
+                    </div>
+                  
+                    <div class="form-row">
+                      <button type="submit">Send</button>
+                    </div>
+                  </form>
+                  
+                  
             </div>
         </div>
     </div>
@@ -197,7 +226,7 @@
             
             <span class="holder3" id="myComputerHolder">
                 <img src="./images/myComputer.png" alt="" id="myComputerLogo">
-                <p class="title">My Computer</p>
+                <p class="title">Contact me</p>
             </span>
 
             <span class="holder4" id="myDocumentsHolder">
