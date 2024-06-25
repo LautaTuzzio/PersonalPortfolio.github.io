@@ -170,11 +170,13 @@ span{
     width: 98px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     body {
         background-color: white;
     }
-    
+    .web{
+        display: none;
+    }
     .error-message {
         position: fixed;
         top: 50%;
@@ -186,15 +188,11 @@ span{
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        display: block;
+        display: block !important;
     }
     
 }
 
-
-body{
-    display: none;
-}
 
 .holder1:hover,
 .holder2:hover,
@@ -219,4 +217,8 @@ a:hover{
 .container .holder1 p{
     text-align: center;
     margin-left: -10px;
+}
+
+.error-message{
+    display: none;
 }
