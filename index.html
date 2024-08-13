@@ -82,9 +82,9 @@
             <div class="main">
                 <img src="./images/self.png" alt="">
                 <div class="text">
-                    <h1>Welcome!</h1>
+                    <h1 class="welcome">Welcome!</h1>
                     <p class="p1">Hello and welcome to my website, my name is Lautaro Tuzzio and I'm a 17 year old aspiring full-stack developer. A JavaScript enthusiast and your local mate enjoyer.</p>
-                    <h1>Languages</h1>
+                    <h1 class="languages">Languages</h1>
                     <ul class="u1">
                         <li>Python (Back-end focused)</li>
                         <li>PHP (basic Laravel)</li>
@@ -94,18 +94,58 @@
                     </ul>
                 </div>
                 <div class="additional-text">
-                    <h1>About</h1>
+                    <h1 class="about">About</h1>
                     <ul>
-                        <li>I was born in Buenos Aires, Argentina 🇦🇷, where I currently reside.</li>
-                        <li>I'm what would be coinsidered an <a href="https://arcarrierpoint.net/avgeek-meaning/#:~:text=What%20is%20an%20Avgeek%3F,land%2C%20and%20perform%20aerobatic%20maneuvers.">Avgeek</a>, although I won't pursue it as a career.</li>
-                        <li>I enjoy various sports, my favorite being volleyball.</li>
-                        <li>I'm currently studying in a high school called "Tecnica 1 de Vicente Lopez".</li>
+                        <li class="location">I was born in Buenos Aires, Argentina 🇦🇷, where I currently reside.</li>
+                        <li class="avgeek">I'm what would be considered an <a href="https://arcarrierpoint.net/avgeek-meaning/#:~:text=What%20is%20an%20Avgeek%3F,land%2C%20and%20perform%20aerobatic%20maneuvers.">Avgeek</a>, although I won't pursue it as a career.</li>
+                        <li class="sports">I enjoy various sports, my favorite being volleyball.</li>
+                        <li class="school">I'm currently studying in a high school called "Tecnica 1 de Vicente Lopez".</li>
                         <li>🧉</li>
                     </ul>
                 </div>
+                <button class="translate" onclick="toggleLanguage()"><h2 class="button">Translate</h2></button>
             </div>
         </div>
     </div>
+    
+    <script>
+        function toggleLanguage() {
+            const welcomeText = document.querySelector('.welcome')
+            const languagesText = document.querySelector('.languages')
+            const aboutText = document.querySelector('.about')
+            const p1Text = document.querySelector('.p1')
+            const locationText = document.querySelector('.location')
+            const avgeekText = document.querySelector('.avgeek')
+            const sportsText = document.querySelector('.sports')
+            const schoolText = document.querySelector('.school')
+            const button = document.querySelector('.button')
+
+    
+            if (welcomeText.innerText === 'Welcome!') {
+                welcomeText.innerText = '¡Bienvenido!'
+                languagesText.innerText = 'Lenguajes'
+                aboutText.innerText = 'Sobre mí'
+                p1Text.innerText = 'Hola y bienvenido a mi sitio web, mi nombre es Lautaro Tuzzio y soy un aspirante a desarrollador full-stack de 17 años. Entusiasta de JavaScript y tu compañero local de mate.'
+                locationText.innerText = 'Nací en Buenos Aires, Argentina 🇦🇷, donde resido actualmente.'
+                avgeekText.innerHTML = 'Soy lo que se consideraría un <a href="https://arcarrierpoint.net/avgeek-meaning/#:~:text=What%20is%20an%20Avgeek%3F,land%2C%20and%20perform%20aerobatic%20maneuvers.">Avgeek</a>, aunque no lo seguiré como carrera.'
+                sportsText.innerText = 'Disfruto de varios deportes, mi favorito es el voleibol.'
+                schoolText.innerText = 'Actualmente estoy estudiando en una escuela secundaria llamada "Técnica 1 de Vicente López".'
+                button.innerText= 'Traducir'
+            } else {
+                welcomeText.innerText = 'Welcome!'
+                languagesText.innerText = 'Languages'
+                aboutText.innerText = 'About'
+                p1Text.innerText = 'Hello and welcome to my website, my name is Lautaro Tuzzio and I\'m a 17 year old aspiring full-stack developer. A JavaScript enthusiast and your local mate enjoyer.'
+                locationText.innerText = 'I was born in Buenos Aires, Argentina 🇦🇷, where I currently reside.'
+                avgeekText.innerHTML = 'I\'m what would be considered an <a href="https://arcarrierpoint.net/avgeek-meaning/#:~:text=What%20is%20an%20Avgeek%3F,land%2C%20and%20perform%20aerobatic%20maneuvers.">Avgeek</a>, although I won\'t pursue it as a career.'
+                sportsText.innerText = 'I enjoy various sports, my favorite being volleyball.'
+                schoolText.innerText = 'I\'m currently studying in a high school called "Tecnica 1 de Vicente Lopez".'
+                button.innerText= 'Translate'
+
+                
+            }
+        }
+    </script>
     <div id="index3Content">
         <div class="recycle-bin-container">
             <div class="icons">
@@ -249,29 +289,29 @@
     <script>
 
     window.addEventListener('load', function() {
-        document.body.style.display = 'block';
-    });
+        document.body.style.display = 'block'
+    })
     $(document).ready(function() {
 
         $("#index3Content .icons").on("mousedown", function(e) {
-            var $draggedElement = $("#index3Content").css('position', 'absolute').addClass('dragging');
-            var startX = e.pageX - $draggedElement.offset().left;
-            var startY = e.pageY - $draggedElement.offset().top;
+            var $draggedElement = $("#index3Content").css('position', 'absolute').addClass('dragging')
+            var startX = e.pageX - $draggedElement.offset().left
+            var startY = e.pageY - $draggedElement.offset().top
 
             $(document).on("mousemove.drag", function(e) {
                 $draggedElement.offset({
                     top: e.pageY - startY,
                     left: e.pageX - startX
-                });
+                })
             }).on("mouseup.drag", function() {
-                $draggedElement.removeClass('dragging');
-                $(document).off(".drag");
-            });
-        });
+                $draggedElement.removeClass('dragging')
+                $(document).off(".drag")
+            })
+        })
 
         $("#index2Content .icons").on("mousedown", function(e) {
-            var $draggedElement = $("#index2Content").css('position', 'absolute').addClass('dragging');
-            var startX = e.pageX - $draggedElement.offset().left;
+            var $draggedElement = $("#index2Content").css('position', 'absolute').addClass('dragging')
+            var startX = e.pageX - $draggedElement.offset().left
             var startY = e.pageY - $draggedElement.offset().top;
 
             $(document).on("mousemove.drag", function(e) {
