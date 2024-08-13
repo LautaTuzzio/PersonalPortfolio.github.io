@@ -113,3 +113,7 @@ button[type="submit"]:hover {
 .mycomputer-content h1{
     text-align: center;
 }
+
+.trans:hover{
+    text-decoration: 1px solid #C0C0C0;
+}

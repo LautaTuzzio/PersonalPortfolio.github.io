@@ -1,23 +1,23 @@
 function updateClock() {
-    var now = new Date();
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
+    var now = new Date()
+    var hours = now.getHours()
+    var minutes = now.getMinutes()
 
-    hours = hours < 10 ? '0' + hours : hours;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
+    hours = hours < 10 ? '0' + hours : hours
+    minutes = minutes < 10 ? '0' + minutes : minutes
 
-    var timeString = hours + ':' + minutes;
+    var timeString = hours + ':' + minutes
     if (hours >=12){
         time = " PM"
     }else{
         time = " AM"
     }
-    document.querySelector('.clock').textContent = timeString + time;
+    document.querySelector('.clock').textContent = timeString + time
 }
-setInterval(updateClock, 1000); 
+setInterval(updateClock, 1000) 
 
 function closeMyComputerContent() {
-    indexContent.style.display = "none";
+    indexContent.style.display = "none"
 }
 
 function lazy() {
@@ -25,10 +25,10 @@ function lazy() {
 }
 
 document.getElementById('contact-form').addEventListener('submit', async function(event) {
-    event.preventDefault();
+    event.preventDefault()
 
-    const form = event.target;
-    const formData = new FormData(form);
+    const form = event.target
+    const formData = new FormData(form)
 
     try {
       const response = await fetch(form.action, {
@@ -37,16 +37,16 @@ document.getElementById('contact-form').addEventListener('submit', async functio
         headers: {
           'Accept': 'application/json'
         }
-      });
+      })
 
       if (response.ok) {
-        alert('Your message has been sent successfully!');
-        form.reset();  
+        alert('Your message has been sent successfully!')
+        form.reset()  
       } else {
-        alert('There was a problem with your submission. Please try again.');
+        alert('There was a problem with your submission. Please try again.')
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('There was a problem with your submission. Please try again.');
+      console.error('Error:', error)
+      alert('There was a problem with your submission. Please try again.')
     }
-  });
+  })
